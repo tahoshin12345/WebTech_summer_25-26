@@ -3,5 +3,15 @@ img{
   width: 200px;
   border-radius: 50%;
   display: block;
-  margin-left: auto;
+}
+
+#hero-text{
+  position: relatable;;
+  padding: 5px;
+  margin: 10px;
+ margin-left: 50%;
+}
+#details{
+  padding: 5px;
+  
 }
