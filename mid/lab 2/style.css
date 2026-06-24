@@ -32,3 +32,6 @@ body{
 td:nth-child(1) {
   font-weight: bold;
 }
+#t1{
+  font-size: large
+}
