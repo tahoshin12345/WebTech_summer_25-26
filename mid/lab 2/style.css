@@ -10,7 +10,6 @@ img{
   padding: 5px;
   margin: 10px;
   margin-left: 50%;
-  
 }
 h1{
   margin-left: -7%;
@@ -21,17 +20,28 @@ h1{
   
 }
 #hero-img{
-  background-image: linear-gradient(rgb(195, 77, 64),rgb(129, 129, 218));
+  background-image: linear-gradient(rgb(0, 204, 255),rgb(12, 11, 12));
   position: sticky;
   top: 0%;
+  border-radius: 5px;
   
 }
 body{
-  background-color: rgb(238, 227, 255);
+  background-color:rgb(12, 11, 12)
 }
 td:nth-child(1) {
   font-weight: bold;
+  color: aqua;
 }
 #t1{
   font-size: large
+}
+#details{
+  color:aliceblue
+}
+#t2{
+  color: aliceblue;
+}
+h2{
+  color: rgb(220, 217, 20);
 }
