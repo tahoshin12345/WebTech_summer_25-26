@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="greeting">Loading...</h1>
+
+    <button onclick="toggleTheme()" id="themeBtn">Dark Mode</button>
+
+    <nav style="margin-top: 20px;">
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
+
+    <div id="about" class="section active">
+        <h2>About Me</h2>
+        <p>Hi, I'm MD. Tahoshin Iftakhar, an undergraduate Computer Science and Engineering student at American International University-Bangladesh (AIUB). I am a passionate developer specializing in C# (.NET/Windows Forms) and C++ desktop application development. Alongside building software like my current project, Skill Wallet, I am actively engaged in academic research exploring technology trends and optimization models. I thrive at the intersection of clean software engineering and impactful research.</p>
+    </div>
+
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Skill Wallet:</strong> Desktop application built with C#.</li>
+            <li><strong>Green Lease:</strong> Web platform concept.</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" onsubmit="validateForm(event)">
+            <p>
+                Name:<br>
+                <input type="text" id="name">
+                <span id="nameError" class="error">Name is required.</span>
+            </p>
+            <p>
+                Email:<br>
+                <input type="text" id="email">
+                <span id="emailError" class="error">Invalid email format.</span>
+            </p>
+            <p>
+                Message (Min 10 chars):<br>
+                <textarea id="message"></textarea>
+                <span id="messageError" class="error">Message must be at least 10 characters.</span>
+            </p>
+            <button type="submit">Submit</button>
+            <p id="successMsg" class="success">message submitted successfully!</p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

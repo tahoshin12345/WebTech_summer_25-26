@@ -1,0 +1,31 @@
+
+body { 
+    font-family: sans-serif; 
+    padding: 20px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.section { 
+    display: none; 
+    margin-top: 20px; 
+}
+
+.active { 
+    display: block; 
+}
+
+.error { 
+    color: red; 
+    display: none; 
+}
+
+.success { 
+    color: green; 
+    display: none; 
+}
+
+nav button { 
+    margin-right: 10px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+}
